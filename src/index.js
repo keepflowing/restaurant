@@ -1,14 +1,29 @@
+const content = document.createElement("div");
+content.id = "content";
+
+const nav = document.createElement("nav");
+const nav1 = document.createElement("a");
+const nav2 = document.createElement("a");
+const nav3 = document.createElement("a");
+nav.append(nav1, nav2, nav3);
+
+nav1.innerText = "Home";
+nav2.innerText = "Menu";
+nav3.innerText = "Contact";
+
+document.body.append(nav, content);
+
 import home from './home';
 import menu from './menu';
 import contact from './contact';
 
-document.querySelector("#nav1").addEventListener("click", () => {
+nav1.addEventListener("click", () => {
     home();
 });
-document.querySelector("#nav2").addEventListener("click", () => {
+nav2.addEventListener("click", () => {
     menu();
 });
-document.querySelector("#nav3").addEventListener("click", () => {
+nav3.addEventListener("click", () => {
     contact();
 });
 

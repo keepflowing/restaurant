@@ -1,5 +1,3 @@
-const content = document.querySelector("#content");
-
 const contact = () => {
     content.innerHTML = "";
     const h1 = document.createElement("h1");
